@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HomeSlice Bakery</title>
+  <link rel="stylesheet" href="bakery.css" />
+  <link rel="icon" href="C:\Users\shrio\Downloads\video_frame.jpg" type="image/x-icon" />
+  <style>
+    .topnav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(92, 13, 13, 0.1);
+      padding: 22px 30px;
+      backdrop-filter: blur(10px);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .brand-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+    }
+
+   
+    .hamburger {
+      font-size: 30px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: white;
+    }
+
+    #menu {
+      display: none;
+      position: absolute;
+      top: 70px;
+      right: 30px;
+      background: #f0f0f0;
+      padding: 10px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+
+    #menu a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    #menu a:hover {
+      background-color: #e2df1f;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topnav">
+    
+    <div class="logo-container">
+      <img src="https://i.pinimg.com/236x/1a/14/f2/1a14f2d6176b336c9123b64144dd0be5.jpg" alt="Logo" class="logo" />
+      <div class="brand-name">
+        <span class="line1">HomeSlice</span><br />
+        <span class="line2">Bakery</span>
+      </div>
+    </div>
+
+
+    <div 
+       type="text" placeholder="Search..." />
+      <button>Search</button>
+    </div>
+
+    
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+  </div>
+
+
+  <div id="menu">
+    
+    <a href="about us.html">About</a>
+    <a href="home.html">Menu</a>
+    <a href="contactus.html">Contact</a>
+    <a href="signup.html">Logout</a>
+  </div>
+
+  <div class="background"></div>
+  <div class="overlay"></div>
+
+  <div class="content">
+    <h1>HomeSlice Bakery</h1>
+    <h2>They are baked, especially for you.</h2>
+    <h2>Great taste in every bite 😋</h2>
+    <p class="quote">"Happiness is homemade... and it smells like freshly baked bread."</p>
+
+    <div class="cta">
+      <h3>Order Now & Taste the Difference!</h3>
+      <p>Freshly baked cakes, sweet treats, and delightful snacks delivered with love.</p>
+    </div>
+  </div>
+
+
+  <section class="reviews-section">
+    <h2>What Our Happy Customers Say 😍</h2>
+    <div class="reviews-container">
+      <div class="review-card">
+        <p class="review-text">"Absolutely loved the Sandwich! Super fresh and perfectly sweet."</p>
+        <h4>- Ankita Sharma</h4>
+      </div>
+      <div class="review-card">
+        <p class="review-text">"The Kaju Katli melts in your mouth. Highly recommend to everyone!"</p>
+        <h4>- Aman Verma</h4>
+      </div>
+      <div class="review-card">
+        <p class="review-text">"Prompt delivery and delicious sweets! Made my Diwali special."</p>
+        <h4>- Neha Patel</h4>
+      </div>
+    </div>
+  </section>
+
+ 
+  <footer id="contact">
+    <br />
+    <h3>
+      <p>123, Sweets Lane, Delhi - 110001</p>
+      <p>Phone: +91-9876543210 | Email: support@mysweets.com</p>
+      <p>
+        Follow us:
+        <a href="https://instagram.com/homeslicebakery_1" target="_blank">Instagram</a> |
+        <a href="#">Facebook</a> |
+        <a href="#">Twitter</a>
+      </p>
+    </h3>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+
+    window.onclick = function (e) {
+      if (!e.target.closest('.hamburger') && !e.target.closest('#menu')) {
+        document.getElementById("menu").style.display = "none";
+      }
+    };
+  </script>
+</body>
+
+</html>

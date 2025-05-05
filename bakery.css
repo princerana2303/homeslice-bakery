@@ -1,0 +1,240 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://i.pinimg.com/736x/30/6e/00/306e005bdeb8db5c72095391b7d42eb4.jpg') no-repeat center center/cover;
+}
+.topnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #eeeded; /* Match with dropdown if needed */
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+  
+  .logo {
+    height: 65px;
+    width: 65px;
+    border-radius: 60%;
+    margin-right: 10px;
+  }
+  
+  .brand-name {
+    font-family: 'Pacifico',' bold', cursive;
+    color: rgb(230, 228, 228);
+    line-height: 1.3;
+  }
+  
+  .brand-name .line1 {
+    font-size: 30px;
+  }
+  
+  .brand-name .line2 {
+    font-size: 30px;
+    display: block;
+    margin-top: -2px;
+  }
+  
+.background-blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(229, 69, 29, 0.2); /* Light overlay */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://png.pngtree.com/background/20230518/original/pngtree-bakery-with-many-different-types-of-items-behind-glass-picture-image_2645229.jpg') no-repeat center center/cover;
+    z-index: -2;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: rgba(164, 116, 116, 0.1);
+    padding: 15px 10px;
+    backdrop-filter: blur(10px);
+}
+
+.topnav a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.topnav a:hover {
+    color: #ffffff;
+}
+
+.content {
+    text-align: center;
+    padding: 100px 20px 40px;
+}
+
+.content h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: #ffd700;
+    text-shadow: 2px 2px #000;
+}
+
+.content h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px #000;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1.5em;
+    margin-top: 30px;
+    color: #e4b937;
+}
+
+.cta {
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.cta h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #ffdd57;
+}
+
+.cta p {
+    font-size: 18px;
+}
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8e1;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.topnav {
+    
+    .nav-btn {
+        background-color: #ffd700;
+        color: #000;
+        padding: 10px 18px;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .nav-btn:hover {
+        background-color: #ffc107;
+        color: #fff;
+        transform: scale(1.05);
+    }
+    
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.topnav a:hover {
+    color: #8b4513;
+    border-radius: 5px;
+}
+
+
+h1 {
+    font-size: 50px;
+    color:whitesmoke;
+    margin-top: 20px;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+}
+
+h2 {
+    font-size: 24px;
+    color: whitesmoke;
+    font-weight: 400;
+}
+
+
+nav, h1, h2 {
+    margin-bottom: 20px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+ 
+  footer {
+    background-color: #222;
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  footer a {
+    color: #ff6f61;
+    margin: 0 10px;
+    text-decoration: none;
+  }

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacks</title>
+    <link rel="stylesheet" href="snacks.css">
+   
+</head>
+
+<body>
+    <header>
+        <h1>Snacks Menu</h1>
+        <p>"Good snacks, good mood, great day!"</p>
+    </header>
+
+    <main>
+        <ul>
+            <li class="snk">
+                <h1>Hotdog</h1>
+                <img src="https://i.pinimg.com/236x/43/37/66/43376652639552aedcdef161d81cbccf.jpg" >
+                <h1>Rs 119</h1>
+                <label>Quantity:</label>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <p><button onclick="validate()">Add to Cart</button></p>
+              
+            </li>
+<br>
+            <li class="snk">
+                <h1>Samosa</h1>
+                <img src="https://i.pinimg.com/474x/2f/a4/4a/2fa44ae0b66a1d7cbd1bd89a3a23c88c.jpg">
+                <h1>Rs 19</h1>
+                <label>Quantity:</label>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <p><button onclick="validate()">Add to Cart</button></p>
+              
+            </li> 
+            <br>
+            <li class="snk">
+                <h1> Momos</h1>
+                <img src="https://img.freepik.com/premium-photo/veg-fried-momos-with-red-chutney-black-background-generative-ai_802140-414.jpg?w=2000">
+                <h1>Rs 119</h1>
+                <label>Quantity:</label>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <p><button onclick="validate()">Add to Cart</button></p>
+              
+            </li>
+<br>
+            <li class="snk">
+                <h1>French Fries</h1>
+                <img src="https://i.pinimg.com/236x/73/7e/d9/737ed93987aae98a76fc2e5f12fc0ecc.jpg">
+                <h1>Rs 119</h1>
+                <label>Quantity:</label>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <p><button onclick="validate()">Add to Cart</button></p>
+               
+            </li>
+<br>
+            <li class="snk">
+                <h1>Sandwich</h1>
+                <img src="https://images6.alphacoders.com/129/thumb-1920-1294748.jpg">
+                <h1>Rs 29</h1>
+                <label>Quantity:</label>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <p><button onclick="validate()">Add to Cart</button></p>
+            
+            </li>
+<br>
+            <li class="snk">
+                <h1>Patties</h1>
+                <img src="https://i.pinimg.com/736x/98/b1/80/98b18031a0de732924e7251c25e2eb5a.jpg">
+                <h1>Rs 29</h1>
+                <label>Quantity:</label>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <p>
+                    <button class="btn" onclick="addToCart('Gulab Jamun', 450)">Add to Cart</button> <br>
+                    
+                </p>
+                
+            </li>
+        </ul>
+    </main>
+<br> 
+
+<hr>
+<div style="text-align: center;">
+    <button id="order" onclick="Order()">Order</button>
+
+  
+
+       
+        <script>
+        function Order() {
+         window.open("order.html", "_blank"); 
+        }
+        </script>
+    <br>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+/* Reset and base styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fefefe;
+}
+
+/* Header styling */
+header {
+    background-color: orange;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    
+}
+
+/* Main container */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Each cake section styled as a card */
+.bakers {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 40px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+/* Cake image styling */
+.cake-img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+/* Heading styling */
+.bakers h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.bakers h2 {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Form input styling */
+.bakers select,
+.bakers input[type="text"],
+.bakers input[type="radio"] {
+    margin: 5px 10px;
+    padding: 6px;
+    font-size: 14px;
+}
+
+.bakers input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 120px;
+}
+
+/* Button styling */
+#btn {
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+    background-color: #218838;
+}
+
+/* Horizontal line styling */
+hr {
+    width: 90%;
+    max-width: 800px;
+    border: none;
+    border-top: 2px solid #eee;
+    margin: 40px 0;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 600px) {
+    .cake-img {
+        max-width: 100%;
+    }
+    #order{
+        width:100%; 
+        color:white;
+    }
+    #order:hover{
+        background-color: aquamarine;
+        color:black;
+    }
+    #order:active{
+        box-shadow: 10px 20px 15px rgb(18, 39, 41);
+    }
+}

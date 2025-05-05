@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HomeSlice Bakery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="signup.css" />
+  <link rel="icon" href="https://i.pinimg.com/236x/1a/14/f2/1a14f2d6176b336c9123b64144dd0be5.jpg" type="image/x-icon">
+  <style>
+    .popup-top-right {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #4e3edc;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .popup-top-right.show {
+      opacity: 1;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">🍩 <span>HomeSlice Bakery</span></div>
+    <ul class="nav-links">
+      <!-- nav items here -->
+    </ul>
+  </nav>
+
+  <section id="login-section" class="form-section">
+    <div class="form-box animated-border">
+      <h2>Welcome Back!</h2>
+      <form id="login-form" onsubmit="Order(event)">
+        <label>Email Address</label>
+        <input type="email" id="login-email" placeholder="test@bakery.com" required />
+      
+        <label>Password</label>
+        <input type="password" id="login-password" placeholder="Enter password" required />
+      
+        <div class="checkbox-group">
+          <input type="checkbox" onclick="togglePassword('login-password')" />
+          <label>Show Password</label>
+        </div>
+      
+        <div class="checkbox-group">
+          <input type="checkbox" />
+          <label>Remember Me</label>
+        </div>
+      
+        <button type="submit" class="order-btn">Login</button>
+      
+        <div id="orderPopup" class="popup-top-right hidden">
+          Logged in successfully!
+        </div>
+      </form>
+      
+
+      <p class="switch-text">Don't have an account?
+        <button type="button" class="switch-btn" onclick="toggleSignup()">Sign up</button>
+      </p>
+    </div>
+  </section>
+
+  <section id="signup-section" class="form-section hidden">
+    <div class="form-box animated-border">
+      <h2>Sign Up</h2>
+      <form id="signup-form">
+        <input type="text" id="signup-name" placeholder="Your name" required />
+        <input type="email" id="signup-email" placeholder="Your email" required />
+        <input type="password" id="signup-password" placeholder="Create password" required />
+
+        <div class="checkbox-group">
+          <input type="checkbox" onclick="togglePassword('signup-password')" />
+          <label>Show Password</label>
+        </div>
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+   function Order(event) {
+  event.preventDefault();
+
+  const email = document.getElementById("login-email").value.trim();
+  const password = document.getElementById("login-password").value.trim();
+  const popup = document.getElementById("orderPopup");
+
+  if (email === "" || password === "") {
+    alert("Please enter both email and password.");
+    return;
+  }
+
+  popup.classList.remove("hidden");
+  popup.classList.add("show");
+
+  setTimeout(() => {
+    popup.classList.remove("show");
+    popup.classList.add("hidden");
+    window.location.href = "bakery.html";
+  }, 2000);
+}
+
+  </script>
+
+  <script src="signup.js"></script>
+</body>
+
+</html>

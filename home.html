@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bakery Shop | Home</title>
+  <link rel="stylesheet" href="bakery.css">
+  <link rel="icon" href="https://i.pinimg.com/236x/1a/14/f2/1a14f2d6176b336c9123b64144dd0be5.jpg" type="image/x-icon">
+
+</head>
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #b06b44;
+      color: #ffffff;
+      backdrop-filter: blur(4px);
+      background: url('https://png.pngtree.com/background/20230518/original/pngtree-bakery-with-many-different-types-of-items-behind-glass-picture-image_2645229.jpg') no-repeat center center/cover;
+    }
+
+    header {
+      background-color: #ffd700;
+      padding: 15px 20px;
+      color: rgb(1, 1, 1);
+    
+      
+    }
+
+    .back-btn {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: url('https://png.pngtree.com/background/20230518/original/pngtree-bakery-with-many-different-types-of-items-behind-glass-picture-image_2645229.jpg') no-repeat center center/cover;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h3 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .product-card {
+      background-color: #e9d461;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .product-card h4 {
+      padding: 15px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      margin: 30px auto;
+      padding: 12px 24px;
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 32px;
+      }
+    }
+    .topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.topnav a:hover {
+    background-color: #8b4513;
+    border-radius: 5px;
+}
+.topnav {
+    
+    .nav-btn {
+        background-color: #ffd700;
+        color: #000;
+        justify-content: center;
+
+        padding: 10px 18px;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .nav-btn:hover {
+        background-color: #ffc107;
+        color: #fff;
+        transform: scale(1.05);
+    }
+    .buy-btn {
+  background-color: #ff6f61;
+  color: white;
+ 
+  margin-top: 1px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buy-btn:hover {
+  background-color: #e65b50;
+  transform: scale(1.05);
+}
+
+}
+    
+    
+
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    
+    <h1>HomeSlice Bakery</h1>
+  </header>
+
+
+  <nav>
+    <div class="topnav">
+
+        <a href="cakes.html" class="nav-btn"><i>Cakes</i></a>
+        <a href="snacks.html" class="nav-btn"><i>Snacks</i></a>
+        <a href="sweets.html" class="nav-btn"><i>Sweets</i></a>
+       
+    </div>
+</nav>
+
+  <section class="section">
+    <h3>Our Specials</h3>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://i.pinimg.com/736x/72/3f/a6/723fa65d5a83ec088acffdcc4cd4965c.jpg" alt="Cake">
+        <h4>Butterscotch cake</h4>
+       
+      </div>
+      <div class="product-card">
+        <img src="https://img.freepik.com/premium-photo/veg-fried-momos-with-red-chutney-black-background-generative-ai_802140-414.jpg?w=2000" alt="Snacks">
+        <h4>Momos</h4>
+      </div>
+      <div class="product-card">
+        <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jt8hh1aefbhscrv5632xh2wq%2F1746191100_img_0.webp?st=2025-05-02T11%3A42%3A03Z&se=2025-05-08T12%3A42%3A03Z&sks=b&skt=2025-05-02T11%3A42%3A03Z&ske=2025-05-08T12%3A42%3A03Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=Ww%2BStLIuYntCPk37ih94gqm%2FyNLlqiit7r%2BAPwY%2Fdow%3D&az=oaivgprodscus" alt="Sweets">
+        <h4>Kaju Katli</h4>
+      </div>
+    </div>
+
+    <section class="section">
+      <h3>our combos</h3>
+     <div class="products">
+        <div class="product-card">
+          <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jt7wbbmrexj8712mcj5qna9s%2F1746168891_img_0.webp?st=2025-05-02T05%3A15%3A44Z&se=2025-05-08T06%3A15%3A44Z&sks=b&skt=2025-05-02T05%3A15%3A44Z&ske=2025-05-08T06%3A15%3A44Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=EBmxSS72Ieq%2BbMOJ%2FZS5vxsYX4pKleZXxPDabGd4awU%3D&az=oaivgprodscus" alt="Cake" width="20px" height="20px">
+          <h4>Samosa and Tea<h4>
+        
+          <p><h4><button onclick="Order()" class="buy-btn"><h4>Order now</h4></button></h4></p>
+          <button id="order" onclick="Order()"></button>
+
+        <script>
+        function Order() { 
+         window.open("order.html", "_blank"); 
+        }
+        </script>
+        </div>
+        <div class="product-card">
+          <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jt7wnfg0f4zapeve9npw368h%2F1746169224_img_1.webp?st=2025-05-02T05%3A15%3A44Z&se=2025-05-08T06%3A15%3A44Z&sks=b&skt=2025-05-02T05%3A15%3A44Z&ske=2025-05-08T06%3A15%3A44Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=vniREleSCr3eThTsNXzkR3%2FiSBdf2xa64zy2DFlzNjo%3D&az=oaivgprodscus" alt="Snacks">
+          <h4>Cold cofee and Butterscotch cake</h4>
+          <p><h4><button onclick="Order()" class="buy-btn"><h4>Order now</h4></button></h4></p>
+          <button id="order" onclick="Order()"></button>
+
+        <script>
+        function Order() {
+         window.open("order.html", "_blank"); 
+        }
+        </script>
+        </div>
+        <div class="product-card">
+          <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jt7wydsaek4rbaq94hympey6%2F1746169516_img_0.webp?st=2025-05-02T05%3A16%3A54Z&se=2025-05-08T06%3A16%3A54Z&sks=b&skt=2025-05-02T05%3A16%3A54Z&ske=2025-05-08T06%3A16%3A54Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=VUdp1R1TJTyIyC7Ge7L5tXmCmLXkVkiVwF%2BSpa4HBAU%3D&az=oaivgprodscus" alt="Sweets">
+          <h4>Lassi and Gulab Jamun</h4><br>
+          <p><h4><button onclick="Order()" class="buy-btn"><h4>Order now</h4></button></h4></p>
+          <button id="order" onclick="Order()"></button>
+
+        <script>
+        function Order() {
+         window.open("order.html", "_blank"); 
+        }
+        </script>
+        </div>
+      </div>
+
+    <a href="contactus.html" class="contact-btn">Contact Us</a>
+  </section>
+
+  <footer id="contact">
+    <p>123, Sweets Lane, Meerut- 110001</p>
+    <p>Phone: +91-9027735679 | Email: support@slicebakery.com</p>
+    <p>Follow us: 
+      <a href="https://instagram.com/homeslicebakery_1" target="_blank">Instagram</a> | 
+      <a href="https://www.facebook.com/Homeslicebakery1">Facebook</a> | 
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
